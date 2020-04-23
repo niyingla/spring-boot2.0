@@ -51,11 +51,12 @@ public class RestWebMvcConfigurer implements WebMvcConfigurer {
     }
 
 
+    @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**").allowedOrigins("*");
     }
 
-
+    @Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
         // 添加 PropertiesHandlerMethodArgumentResolver 到集合首位
         // 添加自定义 HandlerMethodArgumentResolver，优先级低于内建 HandlerMethodArgumentResolver
@@ -67,6 +68,7 @@ public class RestWebMvcConfigurer implements WebMvcConfigurer {
 
     }
 
+    @Override
     public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
         // 不建议添加到 converters 的末尾
 //        converters.add(new PropertiesHttpMessageConverter());

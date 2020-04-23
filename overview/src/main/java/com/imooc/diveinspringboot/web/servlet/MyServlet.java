@@ -10,12 +10,12 @@
 //
 ///**
 // * My Servlet
-// *
+// * 异步servlet
 // * @author 小马哥
 // * @since 2018/5/6
 // */
 //@WebServlet(urlPatterns = "/my/servlet",
-//        asyncSupported=true)
+//        asyncSupported=true) //开启异步
 //public class MyServlet extends HttpServlet {
 //
 //    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -26,7 +26,7 @@
 //        asyncContext.start(()->{
 //            try {
 //                resp.getWriter().println("Hello,World");
-//                // 触发完成
+//                // 触发完成 必须触发完成
 //                asyncContext.complete();
 //            } catch (IOException e) {
 //                e.printStackTrace();
