@@ -7,7 +7,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * {@link EnableHelloWorld} 引导类
- *
+ * 一般的@Enable*** 内部包含
+ * @Import(****ImportSelector.class)
+ * 这个导入类实现了ImportSelector
  * @author 小马哥
  * @since 2018/5/14
  */
@@ -20,8 +22,7 @@ public class EnableHelloWorldBootstrap {
                 .run(args);
 
         // helloWorld Bean 是否存在
-        String helloWorld =
-                context.getBean("helloWorld", String.class);
+        String helloWorld = context.getBean("helloWorld", String.class);
 
         System.out.println("helloWorld Bean : " + helloWorld);
 
