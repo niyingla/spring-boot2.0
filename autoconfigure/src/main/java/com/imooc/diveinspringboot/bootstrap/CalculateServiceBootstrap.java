@@ -25,8 +25,7 @@ public class CalculateServiceBootstrap {
         // CalculateService Bean 是否存在
         CalculateService calculateService = context.getBean(CalculateService.class);
 
-        System.out.println("calculateService.sum(1...10) : " +
-                calculateService.sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        System.out.println("calculateService.sum(1...10) : " + calculateService.sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
         // 关闭上下文
         context.close();
