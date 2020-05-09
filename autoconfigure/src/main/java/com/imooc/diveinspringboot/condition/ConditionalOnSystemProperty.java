@@ -14,6 +14,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.TYPE, ElementType.METHOD })
 @Documented
+//指定Conditional value为约束条件类
 @Conditional(OnSystemPropertyCondition.class)
 public @interface ConditionalOnSystemProperty {
 
