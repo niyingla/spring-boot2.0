@@ -1,3 +1,2 @@
-# ×Ô¶¯×°Åä
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.imooc.diveinspringboot.configuration.HelloWorldAutoConfiguration
+# ï¿½Ô¶ï¿½×°ï¿½ï¿½
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.imooc.diveinspringboot.configuration.HelloWorldAutoConfiguration

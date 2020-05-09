@@ -11,6 +11,8 @@ import org.springframework.context.ConfigurableApplicationContext;
  * @author 小马哥
  * @since 2018/5/15
  */
+// 也可以通过 spring.factories文件的
+// org.springframework.boot.autoconfigure.EnableAutoConfiguration 设置配置类
 @EnableAutoConfiguration
 public class EnableAutoConfigurationBootstrap {
 

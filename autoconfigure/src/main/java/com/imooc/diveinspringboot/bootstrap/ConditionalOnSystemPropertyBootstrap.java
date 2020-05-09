@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 
 /**
  * 系统属性条件引导类
- *
+ * 指定@Conditional子注解 value为约束条件类
  * @author 小马哥
  * @since 2018/5/15
  */
