@@ -20,8 +20,7 @@ public class EnableAutoConfigurationBootstrap {
                 .run(args);
 
         // helloWorld Bean 是否存在
-        String helloWorld =
-                context.getBean("helloWorld", String.class);
+        String helloWorld = context.getBean("helloWorld", String.class);
 
         System.out.println("helloWorld Bean : " + helloWorld);
 

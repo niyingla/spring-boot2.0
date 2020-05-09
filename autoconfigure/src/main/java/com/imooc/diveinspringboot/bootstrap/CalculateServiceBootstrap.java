@@ -18,6 +18,7 @@ public class CalculateServiceBootstrap {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new SpringApplicationBuilder(CalculateServiceBootstrap.class)
                 .web(WebApplicationType.NONE)
+                // 指定 配置化条件装配 profiles
                 .profiles("Java8")
                 .run(args);
 
