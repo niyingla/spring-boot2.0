@@ -7,6 +7,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * {@link EnableAutoConfiguration} 引导类
+ * @enable** 类里面一般都有
+ * @Import({***Selector.class}) 导入配置
+ * 也可以 @Configuration
  *
  * @author 小马哥
  * @since 2018/5/15
@@ -32,8 +35,7 @@ public class EnableAutoConfigurationBootstrap {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new SpringApplicationBuilder(EnableAutoConfigurationBootstrap.class)
-                .web(WebApplicationType.NONE)
-                .run(args);
+                .web(WebApplicationType.NONE).run(args);
 
         // helloWorld Bean 是否存在
         String helloWorld = context.getBean("helloWorld", String.class);
