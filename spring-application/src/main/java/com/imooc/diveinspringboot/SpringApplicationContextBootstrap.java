@@ -24,7 +24,7 @@ public class SpringApplicationContextBootstrap {
     public static void main(String[] args) {
 
         ConfigurableApplicationContext context = new SpringApplicationBuilder(SpringApplicationContextBootstrap.class)
-//                .web(WebApplicationType.NONE)
+//                .web(WebApplicationType.SERVLET)
                 .run(args);
 
         System.out.println("ConfigurableApplicationContext 类型：" + context.getClass().getName());
