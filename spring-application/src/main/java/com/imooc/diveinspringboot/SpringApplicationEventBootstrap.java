@@ -5,7 +5,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * Spring 应用事件引导类
- *
+ *  创建 Spring 应用上下文（ ConfigurableApplicationContext ）
+ *  Web Reactive： AnnotationConfigReactiveWebServerApplicationContext
+ *  Web Servlet： AnnotationConfigServletWebServerApplicationContext
+ *  非 Web： AnnotationConfigApplicationContex
  * @author 小马哥
  * @since 2018/5/17
  */
