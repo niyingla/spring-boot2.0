@@ -33,8 +33,13 @@ public class BeforeConfigFileApplicationListener implements SmartApplicationList
         return true;
     }
 
+    /**
+     * 2
+     * @param event
+     */
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
+        //应用环境准备事件
         if (event instanceof ApplicationEnvironmentPreparedEvent) {
             ApplicationEnvironmentPreparedEvent preparedEvent = (ApplicationEnvironmentPreparedEvent) event;
             Environment environment = preparedEvent.getEnvironment();

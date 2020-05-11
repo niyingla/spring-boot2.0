@@ -15,7 +15,7 @@ import org.springframework.core.annotation.Order;
 public class HelloWorldApplicationContextInitializer<C extends ConfigurableApplicationContext>
         implements ApplicationContextInitializer<C> {
     /**
-     *  2
+     *  3
      * 同样 在容器刷新之前调用该类的
      * @param applicationContext
      */

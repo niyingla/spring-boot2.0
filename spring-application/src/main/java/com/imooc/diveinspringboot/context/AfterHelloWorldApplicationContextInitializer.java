@@ -13,7 +13,7 @@ import org.springframework.core.Ordered;
 public class AfterHelloWorldApplicationContextInitializer implements ApplicationContextInitializer, Ordered {
 
     /**
-     * 3
+     * 4
      * 在容器刷新之前调用该类的 initialize 方法
      * @param applicationContext
      */

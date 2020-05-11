@@ -14,6 +14,10 @@ import org.springframework.core.annotation.Order;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class HelloWorldApplicationListener implements ApplicationListener<ContextRefreshedEvent> {
 
+    /**
+     * 5  容器刷新事件
+     * @param event
+     */
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
         System.out.println("HelloWorld : " + event.getApplicationContext().getId()
