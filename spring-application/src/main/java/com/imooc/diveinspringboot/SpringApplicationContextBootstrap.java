@@ -5,6 +5,12 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
 /**
+ *  Spring 应用事件引导类
+ *  创建 Spring 应用上下文（ ConfigurableApplicationContext ）
+ *  Web Reactive： AnnotationConfigReactiveWebServerApplicationContext
+ *  Web Servlet： AnnotationConfigServletWebServerApplicationContext
+ *  非 Web： AnnotationConfigApplicationContex
+ *  ContextRefreshedEvent
  * Spring 应用上下文 引导类
  * 方法 getSpringFactoriesInstances
  * 利用 Spring 工厂加载机制，实例化 ApplicationContextInitializer 实现类，并排序对象集合。
