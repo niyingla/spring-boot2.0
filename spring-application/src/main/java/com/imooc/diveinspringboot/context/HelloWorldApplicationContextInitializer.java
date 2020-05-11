@@ -14,6 +14,10 @@ import org.springframework.core.annotation.Order;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class HelloWorldApplicationContextInitializer<C extends ConfigurableApplicationContext>
         implements ApplicationContextInitializer<C> {
+    /**
+     * 同样 在容器刷新之前调用该类的
+     * @param applicationContext
+     */
     @Override
     public void initialize(C applicationContext) {
         System.out.println("ConfigurableApplicationContext.id = "+ applicationContext.getId());
