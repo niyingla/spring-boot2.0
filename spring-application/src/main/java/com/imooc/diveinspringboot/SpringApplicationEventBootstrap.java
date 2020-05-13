@@ -29,6 +29,17 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  *
  * 这是一个 web-specific 事件，告诉所有 bean HTTP 请求已经被服务。只能应用于使用DispatcherServlet的Web应用。
  * 在使用Spring作为前端的MVC控制器时，当Spring处理用户请求结束后，系统会自动触发该事件。
+ *
+ * Spring 应用事件
+ *      普通应用事件：   ApplicationEvent
+ *      应用上下文事件： ApplicationContextEvent
+ * Spring 应用监听器
+ *      接口编程模型：   ApplicationListener
+ *      注解编程模型：   @EventListener
+ *
+ *     注解模式 （同一个事件可以多个监听）
+ *     @EventListener
+ *     public void listenHello(HelloEvent event)
  */
 public class SpringApplicationEventBootstrap {
 

@@ -20,6 +20,7 @@ public class HelloWorldRunListener implements SpringApplicationRunListener {
     /**
      * 1
      * Spring 应用刚启动
+     * 对应事件 ApplicationStartingEvent
      */
     @Override
     public void starting() {
@@ -27,7 +28,9 @@ public class HelloWorldRunListener implements SpringApplicationRunListener {
     }
 
     /**
+     *
      * ConfigurableEnvironment 准备妥当，允许将其调整
+     * 对应事件 ApplicationEnvironmentPreparedEvent
      * @param environment
      */
     @Override
@@ -45,6 +48,7 @@ public class HelloWorldRunListener implements SpringApplicationRunListener {
     }
 
     /**
+     * 对应事件 ApplicationPreparedEvent
      * ConfigurableApplicationContext 已装载，但仍未启动
      * @param context
      */
@@ -54,6 +58,7 @@ public class HelloWorldRunListener implements SpringApplicationRunListener {
     }
 
     /**
+     * 对应事件 ApplicationStartedEvent
      * ConfigurableApplicationContext 已启动，此时 Spring Bean 已初始化完成
      * @param context
      */
@@ -63,6 +68,7 @@ public class HelloWorldRunListener implements SpringApplicationRunListener {
     }
 
     /**
+     * 对应事件 ApplicationReadyEvent
      * Spring 应用正在运行
      * @param context
      */
@@ -72,6 +78,7 @@ public class HelloWorldRunListener implements SpringApplicationRunListener {
     }
 
     /**
+     * 对应事件 ApplicationFailedEvent
      * Spring 应用运行失败
      * @param context
      * @param exception
