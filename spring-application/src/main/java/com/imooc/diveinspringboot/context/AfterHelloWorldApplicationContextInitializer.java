@@ -5,8 +5,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.Ordered;
 
 /**
+ * spring.factories 文件中指定加载当前初始化器
  * After HelloWorldApplicationContextInitializer
- *
+ * 加载应用上下文初始器
  * @author 小马哥
  * @since 2018/5/17
  */
@@ -23,7 +24,7 @@ public class AfterHelloWorldApplicationContextInitializer implements Application
     }
 
     /**
-     * 指定其拥有最高的排序级别
+     * 指定其拥有最高的排序级别 （也就是加载顺序 越小越先）
      * @return
      */
     @Override

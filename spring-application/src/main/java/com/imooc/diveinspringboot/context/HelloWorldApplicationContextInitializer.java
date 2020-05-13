@@ -6,8 +6,8 @@ import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 
 /**
- * TODO...
- *
+ * 可实现多个方法 当前简化不实现
+ * spring.factories文件中指定加载当前初始化器
  * @author 小马哥
  * @since 2018/5/17
  */

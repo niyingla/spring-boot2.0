@@ -6,12 +6,13 @@ import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 
 /**
+ *
  * HelloWorld {@link ApplicationListener} 监听 {@link ContextRefreshedEvent}
  *
  * @author 小马哥
  * @since 2018/5/17
  */
-@Order(Ordered.HIGHEST_PRECEDENCE)
+@Order(Ordered.HIGHEST_PRECEDENCE)//指定优先级
 public class HelloWorldApplicationListener implements ApplicationListener<ContextRefreshedEvent> {
 
     /**
