@@ -28,17 +28,25 @@ public class WebMvcConfig implements WebMvcConfigurer {
 //        <!--<property name="prefix" value="/WEB-INF/jsp/"/>-->
 //        <!--<property name="suffix" value=".jsp"/>-->
 //    <!--</bean>-->
+
+    /**
+     * 设置试图解析器
+     * @return
+     */
     @Bean
     public ViewResolver viewResolver(){
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setViewClass(JstlView.class);
+        //路径前缀
         viewResolver.setPrefix("/WEB-INF/jsp/");
+        //路径后缀
         viewResolver.setSuffix(".jsp");
         return viewResolver;
     }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        //添加拦截器
         registry.addInterceptor(new HandlerInterceptor() {
             @Override
             public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
