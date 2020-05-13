@@ -6,8 +6,8 @@ import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 
 /**
- *
- * HelloWorld {@link ApplicationListener} 监听 {@link ContextRefreshedEvent}
+ * 也需要在spring.factories 设置监听
+ * HelloWorld {@link ApplicationListener} 监听 {@link ContextRefreshedEvent} **重点
  *
  * @author 小马哥
  * @since 2018/5/17
