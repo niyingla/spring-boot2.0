@@ -9,7 +9,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  *  创建 Spring 应用上下文（ ConfigurableApplicationContext ）
  *  Web Reactive： AnnotationConfigReactiveWebServerApplicationContext
  *  Web Servlet： AnnotationConfigServletWebServerApplicationContext
- *  非 Web： AnnotationConfigApplicationContex
+ *  非 Web： AnnotationConfigApplicationContext
  *  ContextRefreshedEvent
  * Spring 应用上下文 引导类
  * 方法 getSpringFactoriesInstances
