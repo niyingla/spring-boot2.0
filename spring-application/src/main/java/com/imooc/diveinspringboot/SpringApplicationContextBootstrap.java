@@ -27,7 +27,9 @@ public class SpringApplicationContextBootstrap {
 //                .web(WebApplicationType.SERVLET)
                 .run(args);
 
+        //打印当前应用的上下文类型
         System.out.println("ConfigurableApplicationContext 类型：" + context.getClass().getName());
+        //打印当前应用的Environment类型
         System.out.println("Environment 类型：" + context.getEnvironment().getClass().getName());
 
         // 关闭上下文
