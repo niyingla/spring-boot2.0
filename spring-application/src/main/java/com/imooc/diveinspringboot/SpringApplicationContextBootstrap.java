@@ -15,6 +15,8 @@ import org.springframework.context.ConfigurableApplicationContext;
  * 方法 getSpringFactoriesInstances
  * 利用 Spring 工厂加载机制，实例化 ApplicationContextInitializer 实现类，并排序对象集合。
  *
+ * Context 和 Environment 都是根据类型推断的进行加载的
+ *
  * @author 小马哥
  * @since 2018/5/17
  */

@@ -13,6 +13,11 @@ import org.springframework.core.env.ConfigurableEnvironment;
  */
 public class HelloWorldRunListener implements SpringApplicationRunListener {
 
+    /**
+     * 必须使用当前参数构造
+     * @param application
+     * @param args
+     */
     public HelloWorldRunListener(SpringApplication application, String[] args) {
 
     }
