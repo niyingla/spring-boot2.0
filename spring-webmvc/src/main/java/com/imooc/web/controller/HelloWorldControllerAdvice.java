@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * {@link HelloWorldController} 通知
- *
+ * assignableTypes 指定可用类型
  * @author 小马哥
  * @since 2018/5/21
  */
@@ -27,6 +27,11 @@ public class HelloWorldControllerAdvice {
         return "Hello,World";
     }
 
+    /**
+     * 指定错误处理方法
+     * @param throwable
+     * @return
+     */
     @ExceptionHandler(Throwable.class)
     public ResponseEntity<String> onException(Throwable throwable) {
         return ResponseEntity.ok(throwable.getMessage());
