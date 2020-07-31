@@ -54,7 +54,7 @@ public class SpringApplicationEventBootstrap {
 
         //启动上下文
         context.refresh();
-        // 发送事件
+        // 发送事件 默认是 ApplicationContextEvent
         context.publishEvent("HelloWorld");
         context.publishEvent("2018");
         context.publishEvent(new ApplicationEvent("小马哥") {});
