@@ -8,7 +8,7 @@ import java.lang.annotation.*;
 /**
  *  激活 HelloWorld 模块
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/14
  */
 @Retention(RetentionPolicy.RUNTIME)

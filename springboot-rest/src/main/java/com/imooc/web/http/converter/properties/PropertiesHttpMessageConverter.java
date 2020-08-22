@@ -17,7 +17,7 @@ import java.util.Properties;
 /**
  * {@link Properties} {@link HttpMessageConverter} 实现
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/27
  */
 public class PropertiesHttpMessageConverter extends AbstractGenericHttpMessageConverter<Properties> {

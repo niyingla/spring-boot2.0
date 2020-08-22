@@ -18,7 +18,7 @@ import java.util.EnumSet;
 /**
  * Spring Boot Servlet 引导类
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/6/5
  */
 @EnableAutoConfiguration

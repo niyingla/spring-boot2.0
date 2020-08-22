@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * HelloWorld {@link RestController} 实现
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/27
  */
 @RestController

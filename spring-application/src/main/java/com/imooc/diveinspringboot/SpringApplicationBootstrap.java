@@ -16,7 +16,7 @@ import java.util.Set;
  *
  *
  * deduceEnvironmentClass 判断环境类型 SERVLET、REACTIVE、无
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/16
  */
 public class SpringApplicationBootstrap {

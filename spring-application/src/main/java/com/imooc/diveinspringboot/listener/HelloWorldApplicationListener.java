@@ -9,7 +9,7 @@ import org.springframework.core.annotation.Order;
  * 也需要在spring.factories 设置监听
  * HelloWorld {@link ApplicationListener} 监听 {@link ContextRefreshedEvent} **重点
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/17
  */
 @Order(Ordered.HIGHEST_PRECEDENCE)//指定优先级

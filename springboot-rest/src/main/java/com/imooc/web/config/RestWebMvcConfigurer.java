@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * REST {@link WebMvcConfigurer} 实现
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/27
  */
 @Configuration

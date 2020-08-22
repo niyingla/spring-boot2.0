@@ -6,7 +6,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 /**
  * {@link DispatcherServlet} 配置类
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/21
  */
 @ComponentScan(basePackages = "com.imooc.web")

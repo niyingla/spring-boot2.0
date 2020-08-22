@@ -8,7 +8,7 @@ import org.springframework.core.env.ConfigurableEnvironment;
 /**
  * HelloWorld {@link SpringApplicationRunListener}
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/17
  */
 public class HelloWorldRunListener implements SpringApplicationRunListener {

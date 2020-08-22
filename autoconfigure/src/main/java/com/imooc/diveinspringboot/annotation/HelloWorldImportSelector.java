@@ -7,7 +7,7 @@ import org.springframework.core.type.AnnotationMetadata;
 /**
  * HelloWorld {@link ImportSelector} 实现
  * 实现了 ImportSelector  会自动导入selectImports返回的配置类
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/14
  */
 public class HelloWorldImportSelector implements ImportSelector {

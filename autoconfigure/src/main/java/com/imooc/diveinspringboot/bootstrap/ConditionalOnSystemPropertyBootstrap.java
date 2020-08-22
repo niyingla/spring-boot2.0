@@ -9,15 +9,19 @@ import org.springframework.context.annotation.Bean;
 /**
  * 系统属性条件引导类
  * 指定@Conditional子注解 value为约束条件类
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/15
  */
 public class ConditionalOnSystemPropertyBootstrap {
 
+    /**
+     * 指定好运行参数 -Duser.name=Mercy
+     * @return
+     */
     @Bean
     @ConditionalOnSystemProperty(name = "user.name", value = "Mercy")
     public String helloWorld() {
-        return "Hello,World 小马哥";
+        return "Hello,World huohua";
     }
 
     public static void main(String[] args) {

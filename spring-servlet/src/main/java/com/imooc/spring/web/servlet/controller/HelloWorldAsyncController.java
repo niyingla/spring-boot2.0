@@ -12,7 +12,7 @@ import java.util.concurrent.*;
 /**
  * Hello World 异步 {@link RestController}
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/6/4
  */
 @RestController

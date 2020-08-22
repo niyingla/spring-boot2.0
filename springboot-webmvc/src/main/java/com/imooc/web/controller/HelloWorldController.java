@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * HelloWorld {@link Controller}
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/20
  */
 @Controller

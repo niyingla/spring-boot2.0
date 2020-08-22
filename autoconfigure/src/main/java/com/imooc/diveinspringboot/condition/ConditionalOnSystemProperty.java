@@ -8,7 +8,7 @@ import java.lang.annotation.*;
 /**
  * Java 系统属性 条件判断
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/15
  */
 @Retention(RetentionPolicy.RUNTIME)

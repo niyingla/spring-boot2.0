@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 /**
  * 二级 {@link Repository}
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/14
  */
 @Target({ElementType.TYPE})

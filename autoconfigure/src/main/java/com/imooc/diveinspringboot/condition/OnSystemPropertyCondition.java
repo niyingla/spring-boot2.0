@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 系统属性条件判断
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/15
  */
 public class OnSystemPropertyCondition implements Condition {

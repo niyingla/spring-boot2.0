@@ -3,7 +3,7 @@ package com.imooc.web.domain;
 /**
  *  用户模型
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/27
  */
 public class User {

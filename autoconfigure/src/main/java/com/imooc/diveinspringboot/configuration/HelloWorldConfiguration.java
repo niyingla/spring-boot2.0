@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * HelloWorld 配置
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/14
  */
 public class HelloWorldConfiguration {

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 仓储的引导类
- * @author 小马哥
+ * @author huohua
  * @Component和注解参数可传递
  * @since 2018/5/14
  */

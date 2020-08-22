@@ -16,7 +16,7 @@ import java.util.Properties;
 /**
  * {@link Properties 类型} {@link HandlerMethodArgumentResolver}
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/27
  */
 public class PropertiesHandlerMethodArgumentResolver implements HandlerMethodArgumentResolver {

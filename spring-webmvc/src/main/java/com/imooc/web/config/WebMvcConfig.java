@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Spring Web MVC 配置（类）
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/20
  */
 @Configuration

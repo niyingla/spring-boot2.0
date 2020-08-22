@@ -3,7 +3,7 @@ package com.imooc.diveinspringboot.service;
 /**
  * 计算服务
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/15
  */
 public interface CalculateService {

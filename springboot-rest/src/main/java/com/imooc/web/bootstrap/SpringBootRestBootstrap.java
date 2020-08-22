@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Spring Boot Rest 引导类
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/27
  */
 @SpringBootApplication(scanBasePackages = {

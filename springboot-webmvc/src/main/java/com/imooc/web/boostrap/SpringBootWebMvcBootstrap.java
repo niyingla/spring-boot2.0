@@ -23,7 +23,7 @@ import java.io.File;
  * AbstractAnnotationConfigDispatcherServletInitializer
  * 加载初始化注册类
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/21
  */
 @SpringBootApplication(scanBasePackages = "com.imooc.web")

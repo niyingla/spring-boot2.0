@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * 我的 {@link FirstLevelRepository}
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/14
  */
 @SecondLevelRepository(value = "myFirstLevelRepository") // Bean 名称

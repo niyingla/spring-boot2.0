@@ -8,7 +8,7 @@ import org.springframework.core.Ordered;
  * spring.factories 文件中指定加载当前初始化器
  * After HelloWorldApplicationContextInitializer
  * 加载应用上下文初始器
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/17
  */
 public class AfterHelloWorldApplicationContextInitializer implements ApplicationContextInitializer, Ordered {

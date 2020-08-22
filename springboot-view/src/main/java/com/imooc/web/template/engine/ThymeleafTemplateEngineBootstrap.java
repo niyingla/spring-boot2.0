@@ -15,7 +15,7 @@ import java.io.IOException;
 /**
  * Thymeleaf 模板引擎引导类
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/24
  */
 public class ThymeleafTemplateEngineBootstrap {

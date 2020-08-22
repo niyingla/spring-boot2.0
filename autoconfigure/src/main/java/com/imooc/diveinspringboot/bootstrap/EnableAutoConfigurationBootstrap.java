@@ -11,7 +11,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * @Import({***Selector.class}) 导入配置
  * 也可以 @Configuration
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/15
  */
 
@@ -27,7 +27,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 // @ConditionalOnJava ： 指定的Java版本存在时起效
 // @ConditionalOnWebApplication ： Web应用环境下起效
 // @ConditionalOnNotWebApplication ： 非Web应用环境下起效
-    
+
 // 也可以通过 spring.factories文件的
 // org.springframework.boot.autoconfigure.EnableAutoConfiguration 设置配置类
 @EnableAutoConfiguration

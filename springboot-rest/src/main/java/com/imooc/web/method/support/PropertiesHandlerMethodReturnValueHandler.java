@@ -17,7 +17,7 @@ import java.util.Properties;
 /**
  * {@link Properties} {@link HandlerMethodReturnValueHandler} 实现
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/28
  */
 public class PropertiesHandlerMethodReturnValueHandler implements HandlerMethodReturnValueHandler {

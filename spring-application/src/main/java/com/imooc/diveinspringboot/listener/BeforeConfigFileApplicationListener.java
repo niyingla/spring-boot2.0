@@ -11,7 +11,7 @@ import org.springframework.core.env.Environment;
 /**
  * Before {@link ConfigFileApplicationListener} 实现
  * 是高级监听器，是ApplicationListener的子类，能够实现有序监听
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/17
  */
 public class BeforeConfigFileApplicationListener implements SmartApplicationListener, Ordered {

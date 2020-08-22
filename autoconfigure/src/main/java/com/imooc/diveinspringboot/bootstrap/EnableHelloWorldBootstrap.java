@@ -10,7 +10,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * 一般的@Enable*** 内部包含
  * @Import(****ImportSelector.class)
  * 这个导入类实现了ImportSelector 然后加载selectImports返回的类
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/14
  */
 @EnableHelloWorld

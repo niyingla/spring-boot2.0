@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * HelloWorld 自动装配
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/15
  */
 @Configuration // Spring 模式注解装配

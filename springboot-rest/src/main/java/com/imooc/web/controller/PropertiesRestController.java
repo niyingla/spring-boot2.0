@@ -9,7 +9,7 @@ import java.util.Properties;
 /**
  * {@link Properties} {@link RestController}
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/27
  */
 //@RestController

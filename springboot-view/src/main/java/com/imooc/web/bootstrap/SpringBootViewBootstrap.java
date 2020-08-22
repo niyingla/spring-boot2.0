@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * SpringBoot 视图引导类
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/24
  */
 @SpringBootApplication(scanBasePackages = "com.imooc.web")

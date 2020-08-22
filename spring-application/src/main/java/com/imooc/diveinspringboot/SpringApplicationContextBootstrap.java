@@ -17,7 +17,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  *
  * Context 和 Environment 都是根据类型推断的进行加载的
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/17
  */
 @SpringBootApplication

@@ -7,7 +7,7 @@ import org.springframework.core.Ordered;
 /**
  * After HelloWorld {@link ApplicationListener} 监听 {@link ContextRefreshedEvent}
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/17
  */
 public class AfterHelloWorldApplicationListener implements ApplicationListener<ContextRefreshedEvent>,Ordered {

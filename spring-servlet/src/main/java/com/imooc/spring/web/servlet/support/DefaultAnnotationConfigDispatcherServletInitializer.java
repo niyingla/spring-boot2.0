@@ -6,7 +6,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 /**
  * Spring Web MVC 自动装配 默认实现
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/21
  */
 @ComponentScan(basePackages = "com.imooc.spring.web.servlet.controller")

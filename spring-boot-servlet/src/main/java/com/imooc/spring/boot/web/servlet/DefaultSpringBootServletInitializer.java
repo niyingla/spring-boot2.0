@@ -6,7 +6,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 /**
  * {@link SpringBootServletInitializer} 默认实现
  *
- * @author 小马哥
+ * @author huohua
  * @since 2018/6/5
  */
 public class DefaultSpringBootServletInitializer extends SpringBootServletInitializer {

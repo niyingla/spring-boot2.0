@@ -9,7 +9,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 /**
  * {@link CalculateService} 引导类
  * 通过指定profiles参数和@Profile注解 指定加载类
- * @author 小马哥
+ * @author huohua
  * @since 2018/5/15
  */
 @SpringBootApplication(scanBasePackages = "com.imooc.diveinspringboot.service")
