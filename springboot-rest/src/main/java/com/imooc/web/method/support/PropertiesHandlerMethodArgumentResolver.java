@@ -25,6 +25,15 @@ public class PropertiesHandlerMethodArgumentResolver implements HandlerMethodArg
         return Properties.class.equals(parameter.getParameterType());
     }
 
+    /**
+     * 设置参数方法
+     * @param parameter
+     * @param mavContainer
+     * @param webRequest
+     * @param binderFactory
+     * @return
+     * @throws Exception
+     */
     @Override
     public Object resolveArgument(MethodParameter parameter, ModelAndViewContainer mavContainer,
                                   NativeWebRequest webRequest, WebDataBinderFactory binderFactory) throws Exception {
@@ -37,7 +46,7 @@ public class PropertiesHandlerMethodArgumentResolver implements HandlerMethodArg
         HttpServletRequest request = servletWebRequest.getRequest();
 
         HttpInputMessage httpInputMessage = new ServletServerHttpRequest(request);
-
+        //复用之前的读取方法 读取并设置参数
         return converter.read(null, null, httpInputMessage);
     }
 }

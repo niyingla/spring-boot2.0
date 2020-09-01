@@ -65,6 +65,15 @@ public class HelloWorldAsyncController {
         };
     }
 
+    /**
+     * 异步操作的结果同步返回给前端
+     * 当一个请求到达API接口，如果该API接口的return返回值是DeferredResult，
+     * 在没有超时或者DeferredResult对象设置setResult时，接口不会返回，
+     * 但是Servlet容器线程会结束，DeferredResult另起线程来进行结果处理(即这种操作提升了服务短时间的吞吐能力)，
+     * 并setResult，如此以来这个请求不会占用服务连接池太久，如果超时或设置setResult，接口会立即返回。
+     *
+     * @return
+     */
     @GetMapping("/hello-world")
     public DeferredResult<String> helloWorld() {
         DeferredResult<String> result = new DeferredResult<>(50L);
@@ -73,10 +82,12 @@ public class HelloWorldAsyncController {
 //        queue.offer(result);
         println("Hello,World");
         result.onCompletion(() -> {
+            //可以理解为finally 总会跟随线程完成
             println("执行结束");
         });
 
         result.onTimeout(() -> {
+            //可以理解为异常 所以另起一个线程
             println("执行超时");
         });
 

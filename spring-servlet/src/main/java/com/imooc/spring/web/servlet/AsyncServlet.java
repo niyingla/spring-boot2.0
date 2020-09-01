@@ -32,7 +32,8 @@ public class AsyncServlet extends HttpServlet {
             // 创建 AsyncContext
             AsyncContext asyncContext = request.startAsync();
             // 设置超时时间
-            asyncContext.setTimeout(50L);
+            asyncContext.setTimeout(500L);
+            //创建监听器 设置各个状态执行方法
             asyncContext.addListener(new AsyncListener() {
                 @Override
                 public void onComplete(AsyncEvent event) throws IOException {
@@ -57,15 +58,17 @@ public class AsyncServlet extends HttpServlet {
                 }
             });
 
+            //设置响应数据
             println("Hello,World");
-//            ServletResponse servletResponse = asyncContext.getResponse();
-//            // 设置响应媒体类型
-//            servletResponse.setContentType("text/plain;charset=UTF-8");
-//            // 获取字符输出流
-//            PrintWriter writer = servletResponse.getWriter();
-//            writer.println("Hello,World");
-//            writer.flush();
-
+            ServletResponse servletResponse = asyncContext.getResponse();
+            // 设置响应媒体类型
+            servletResponse.setContentType("text/plain;charset=UTF-8");
+            // 获取字符输出流
+            PrintWriter writer = servletResponse.getWriter();
+            writer.println("Hello,World");
+            writer.flush();
+            //手动设置 执行完成
+            asyncContext.complete();
         }
     }
 

@@ -15,6 +15,7 @@ import java.nio.charset.Charset;
 import java.util.Properties;
 
 /**
+ * 接口上指定参数类型
  * {@link Properties} {@link HttpMessageConverter} 实现
  *
  * @author huohua
@@ -22,11 +23,22 @@ import java.util.Properties;
  */
 public class PropertiesHttpMessageConverter extends AbstractGenericHttpMessageConverter<Properties> {
 
+    /**
+     * 构造方法设置 支持类型
+     */
     public PropertiesHttpMessageConverter() {
         // 设置支持的 MediaType
         super(new MediaType("text", "properties"));
     }
 
+    /**
+     * 写入结果
+     * @param properties
+     * @param type
+     * @param outputMessage
+     * @throws IOException
+     * @throws HttpMessageNotWritableException
+     */
     @Override
     protected void writeInternal(Properties properties, Type type, HttpOutputMessage outputMessage) throws IOException, HttpMessageNotWritableException {
         // Properties -> String
@@ -45,6 +57,14 @@ public class PropertiesHttpMessageConverter extends AbstractGenericHttpMessageCo
         properties.store(writer,"From PropertiesHttpMessageConverter");
     }
 
+    /**
+     * 写入结果
+     * @param clazz
+     * @param inputMessage
+     * @return
+     * @throws IOException
+     * @throws HttpMessageNotReadableException
+     */
     @Override
     protected Properties readInternal(Class<? extends Properties> clazz, HttpInputMessage inputMessage) throws IOException, HttpMessageNotReadableException {
 
